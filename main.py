@@ -25,7 +25,7 @@ async def on_ready():
 @bot.event  
 async def node_connect():
   await bot.wait_until_ready()
-  await wavelink.NodePool.create_node(bot=bot,host='lavalink.mariliun.ml',port=443,password='lavaliun',https=True, spotify_client=spotify.SpotifyClient(client_id="410e666cc43640c49b846a2d02d75e51", client_secret="0f4497f664c1492abca77279784f6892"))
+  await wavelink.NodePool.create_node(bot=bot,host='lavalink.mariliun.ml',port=443,password='lavaliun',https=True, spotify_client=spotify.SpotifyClient(client_id=".", client_secret="."))
 
 @bot.event
 async def on_wavelink_node_ready(node: wavelink.Node):
